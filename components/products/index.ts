@@ -1,0 +1,10 @@
+export { ProductCard } from "@/components/products/product-card";
+export { ProductDetailClient } from "@/components/products/product-detail-client";
+export { ProductFAQSection } from "@/components/products/product-faq";
+export { ProductFiltersPanel } from "@/components/products/product-filters";
+export { ProductGallery } from "@/components/products/product-gallery";
+export { ProductsPageClient } from "@/components/products/products-page-client";
+export { QuickViewModal } from "@/components/products/quick-view-modal";
+export { SimilarProducts } from "@/components/products/similar-products";
+export { StockBadge } from "@/components/products/stock-badge";
+export { VariantSelector } from "@/components/products/variant-selector";
