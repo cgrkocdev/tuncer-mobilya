@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 828, 1080, 1200, 1920],
     imageSizes: [32, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 365,
+    qualities: [50, 68, 72, 75, 90],
     dangerouslyAllowSVG: false,
   },
   experimental: {

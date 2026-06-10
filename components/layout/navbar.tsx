@@ -5,6 +5,7 @@ import { ShoppingBag } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { SiteLogo } from "@/components/layout/site-logo";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { siteConfig } from "@/lib/site-config";
@@ -32,26 +33,24 @@ export function Navbar({ className, variant = "default" }: NavbarProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 z-50 w-full transition-all duration-500",
+        "fixed top-0 z-50 w-full transition-all duration-500 relative",
         "pt-[env(safe-area-inset-top)]",
         variant === "transparent"
           ? scrolled
-            ? "border-b border-border/60 bg-background/85 shadow-sm backdrop-blur-xl"
+            ? "border-b border-border bg-background/95 shadow-sm backdrop-blur-xl"
             : "border-b border-transparent bg-transparent"
-          : "sticky border-b border-border/60 bg-background/80 backdrop-blur-xl",
+          : "sticky border-b border-border bg-background/95 backdrop-blur-xl",
         className
       )}
     >
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:h-16 sm:px-6 lg:h-20 lg:px-8">
-        <Link
-          href="/"
-          className={cn(
-            "min-w-0 shrink font-serif text-base tracking-tight transition-opacity hover:opacity-70 sm:text-lg lg:text-2xl",
-            isTransparent ? "text-white" : "text-foreground"
-          )}
-        >
-          <span className="truncate">{siteConfig.name}</span>
-        </Link>
+      {isTransparent && (
+        <div className="nav-overlay pointer-events-none absolute inset-0" aria-hidden />
+      )}
+      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:h-16 sm:px-6 lg:h-20 lg:px-8">
+        <SiteLogo
+          variant={isTransparent ? "light" : "default"}
+          className={cn("shrink", !isTransparent && "text-foreground")}
+        />
 
         <nav
           className="hidden items-center gap-5 lg:flex xl:gap-8"
@@ -64,8 +63,8 @@ export function Navbar({ className, variant = "default" }: NavbarProps) {
               className={cn(
                 "whitespace-nowrap text-sm font-medium tracking-wide transition-colors",
                 isTransparent
-                  ? "text-white/75 hover:text-white"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "text-white/90 hover:text-white"
+                  : "text-foreground/80 hover:text-foreground"
               )}
             >
               {link.label}

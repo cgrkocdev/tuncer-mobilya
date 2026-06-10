@@ -11,10 +11,23 @@ export function organizationSchema() {
     url: siteConfig.url,
     logo: `${siteConfig.url}/logo.png`,
     sameAs: [siteConfig.instagram],
+    telephone: siteConfig.whatsapp,
     address: {
       "@type": "PostalAddress",
+      streetAddress: siteConfig.address.split(",")[0]?.trim(),
+      addressLocality: "Ankara",
+      postalCode: "06140",
       addressCountry: "TR",
     },
+    ...(siteConfig.latitude != null && siteConfig.longitude != null
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: siteConfig.latitude,
+            longitude: siteConfig.longitude,
+          },
+        }
+      : {}),
   };
 }
 

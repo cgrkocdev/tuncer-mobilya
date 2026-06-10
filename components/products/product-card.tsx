@@ -30,7 +30,10 @@ export function ProductCard({ product, className }: ProductCardProps) {
       >
         <div className="card-hover glass-card overflow-hidden rounded-2xl">
           <div className="relative aspect-[4/5] overflow-hidden bg-muted">
-            <Link href={`/urunler/${product.slug}`}>
+            <Link
+              href={`/urunler/${product.slug}`}
+              className="relative block h-full w-full"
+            >
               <OptimizedImage
                 src={product.images[0]}
                 alt={product.name}

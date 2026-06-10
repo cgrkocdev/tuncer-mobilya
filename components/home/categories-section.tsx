@@ -46,20 +46,20 @@ export function CategoriesSection({ className }: CategoriesSectionProps) {
                     className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent transition-opacity duration-500 group-hover:from-black/80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/40 to-black/10 transition-opacity duration-500 group-hover:from-black/92" />
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 p-6">
+                <div className="on-dark absolute inset-x-0 bottom-0 z-10 p-4 sm:p-6">
                   <div className="flex items-end justify-between">
                     <div>
-                      <h3 className="font-serif text-xl text-white lg:text-2xl">
+                      <h3 className="text-on-image font-serif text-xl lg:text-2xl">
                         {category.name}
                       </h3>
-                      <p className="mt-2 text-sm text-white/70">
+                      <p className="text-on-image-muted mt-2 text-sm">
                         {category.description}
                       </p>
                     </div>
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-md transition-colors group-hover:bg-white group-hover:text-black">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/30 text-white shadow-md backdrop-blur-md transition-colors group-hover:bg-white group-hover:text-primary">
                       <ArrowUpRight className="size-4" />
                     </span>
                   </div>

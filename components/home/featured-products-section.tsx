@@ -24,7 +24,12 @@ export function FeaturedProductsSection({
   className,
 }: FeaturedProductsSectionProps) {
   return (
-    <section className={cn("section-premium bg-secondary/40", className)}>
+    <section
+      className={cn(
+        "section-premium border-y border-border/60 bg-secondary/80",
+        className
+      )}
+    >
       <div className="container-premium">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-between gap-8 sm:flex-row sm:items-end">

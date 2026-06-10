@@ -21,5 +21,16 @@ export function imageUrl(
   return src;
 }
 
+export const IMAGE_QUALITIES = [50, 68, 72, 75, 90] as const;
+
+export function normalizeImageQuality(quality?: number): number {
+  if (quality == null) return 72;
+  const allowed = IMAGE_QUALITIES as readonly number[];
+  if (allowed.includes(quality)) return quality;
+  return allowed.reduce((prev, curr) =>
+    Math.abs(curr - quality) < Math.abs(prev - quality) ? curr : prev
+  );
+}
+
 export const BLUR_PLACEHOLDER =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3C/filter%3E%3Crect width='16' height='10' fill='%23e8e4df' filter='url(%23b)'/%3E%3C/svg%3E";

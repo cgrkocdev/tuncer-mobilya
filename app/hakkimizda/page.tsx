@@ -138,17 +138,17 @@ export default function HakkimizdaPage() {
                   className="object-cover"
                 />
                 <div className="cinematic-overlay absolute inset-0" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-8 text-center sm:px-8">
-                  <h2 className="text-balance font-serif text-2xl text-white sm:text-3xl md:text-4xl">
+                <div className="on-dark absolute inset-0 z-10 flex flex-col items-center justify-center px-4 py-8 text-center sm:px-8">
+                  <h2 className="text-on-image text-balance font-serif text-2xl sm:text-3xl md:text-4xl">
                     Showroom&apos;umuzu Ziyaret Edin
                   </h2>
-                  <p className="mt-3 max-w-lg text-sm text-white/75 sm:mt-4 sm:text-base">
+                  <p className="text-on-image-muted mt-3 max-w-lg text-sm sm:mt-4 sm:text-base">
                     Koleksiyonlarımızı yakından görmek ve uzman ekibimizle tanışmak
                     için sizi bekliyoruz.
                   </p>
                   <Button
                     size="lg"
-                    className="hover-lift mt-6 w-full max-w-xs border-0 bg-white text-black hover:bg-white/95 sm:mt-8 sm:w-auto"
+                    className="hover-lift mt-6 w-full max-w-xs border-0 bg-[oklch(0.98_0.01_90)] text-primary hover:bg-[oklch(0.99_0.008_92)] sm:mt-8 sm:w-auto"
                     asChild
                   >
                     <Link href="/iletisim">

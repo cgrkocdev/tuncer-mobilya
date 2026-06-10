@@ -28,7 +28,7 @@ export function SiteLogo({
       )}
     >
       <Image
-        src={siteConfig.logo}
+        src={siteConfig.logo ?? "/images/logo.webp"}
         alt={siteConfig.name}
         width={48}
         height={48}

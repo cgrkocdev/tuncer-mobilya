@@ -11,7 +11,11 @@ export interface SiteConfig {
   instagram: string;
   email: string;
   phone: string;
+  phoneAlt?: string;
   address: string;
+  latitude?: number;
+  longitude?: number;
+  logo?: string;
   navLinks: NavLink[];
   footerLinks: {
     title: string;

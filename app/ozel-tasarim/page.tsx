@@ -56,25 +56,26 @@ export default function OzelTasarimPage() {
       />
       <SiteLayout>
         <section className="relative flex min-h-[50vh] items-end overflow-hidden">
-          <OptimizedImage
-            src={scenes.showroomHero}
-            alt="Özel tasarım mobilya showroom"
-            fill
-            priority
-            quality={70}
-            sizes="100vw"
-            cinematic
-            className="object-cover"
-          />
+          <div className="absolute inset-0">
+            <OptimizedImage
+              src={scenes.showroomHero}
+              alt="Özel tasarım mobilya showroom"
+              fill
+              priority
+              sizes="100vw"
+              cinematic
+              className="object-cover"
+            />
+          </div>
           <div className="cinematic-overlay absolute inset-0" />
-          <div className="relative mx-auto w-full max-w-7xl px-4 pb-12 sm:px-8 sm:pb-16 lg:px-16 lg:pb-24">
-            <p className="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
+          <div className="on-dark relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 sm:px-8 sm:pb-16 lg:px-16 lg:pb-24">
+            <p className="text-on-image-muted text-xs font-medium uppercase tracking-[0.35em]">
               Özel Tasarım
             </p>
-            <h1 className="mt-6 max-w-3xl font-serif text-4xl font-light text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-on-image mt-6 max-w-3xl font-serif text-4xl font-light sm:text-5xl lg:text-6xl">
               Mekanınıza Özel, Size Özel
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-white/75">
+            <p className="text-on-image-muted mt-6 max-w-xl text-lg">
               Standart koleksiyonun ötesinde; ölçünüze, zevkinize ve yaşam tarzınıza
               uygun mobilyalar tasarlıyoruz.
             </p>

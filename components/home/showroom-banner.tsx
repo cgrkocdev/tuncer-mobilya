@@ -18,13 +18,13 @@ export function ShowroomBanner() {
         className="object-cover"
       />
       <div className="cinematic-overlay absolute inset-0" />
-      <div className="relative flex h-full flex-col items-center justify-center px-4 text-center sm:px-8">
-        <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/55 sm:text-xs sm:tracking-[0.4em]">
+      <div className="on-dark relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-8">
+        <p className="text-on-image-muted text-[10px] font-medium uppercase tracking-[0.3em] sm:text-xs sm:tracking-[0.4em]">
           Showroom
         </p>
-        <h2 className="mt-4 max-w-3xl font-serif text-2xl font-light leading-tight text-white sm:mt-6 sm:text-4xl lg:text-6xl">
+        <h2 className="text-on-image mt-4 max-w-3xl font-serif text-2xl font-light leading-tight sm:mt-6 sm:text-4xl lg:text-6xl">
           Mekanlarınıza
-          <span className="block italic text-white/90">Işık ve Doku</span>
+          <span className="block italic">Işık ve Doku</span>
         </h2>
       </div>
     </section>
