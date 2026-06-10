@@ -65,12 +65,12 @@ export const categoryImages = {
 } as const;
 
 export const instagramGrid = [
-  scenes.showroomHero,
-  scenes.livingLuxury,
-  scenes.diningLuxury,
-  scenes.bedroomSuite,
-  scenes.officeSpace,
-  scenes.showroomWarm,
+  products.sofa,
+  products.wardrobe,
+  products.sectional,
+  products.sideboard,
+  products.desk,
+  products.officeChair,
 ];
 
 export const ogImage = img("og-image.jpg");

@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node scripts/optimize-images.mjs",
-    "sync-images": "node scripts/sync-instagram-images.mjs",
+    "sync-images": "node scripts/sync-instagram-images.mjs && node scripts/optimize-images.mjs",
     "sync-contact": "node scripts/sync-instagram-contact.mjs"
   },
   "dependencies": {

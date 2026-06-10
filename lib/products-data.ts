@@ -6,10 +6,10 @@ function gallery(slug: string): string[] {
 }
 
 export const productCategories: ProductCategory[] = [
-  { id: "oturma-odasi", name: "Oturma Odası", slug: "oturma-odasi" },
-  { id: "yemek-odasi", name: "Yemek Odası", slug: "yemek-odasi" },
-  { id: "yatak-odasi", name: "Yatak Odası", slug: "yatak-odasi" },
-  { id: "ofis", name: "Ofis & Çalışma", slug: "ofis" },
+  { id: "oturma-odasi", name: "Makam Takımları", slug: "oturma-odasi" },
+  { id: "yemek-odasi", name: "Makam Masaları", slug: "yemek-odasi" },
+  { id: "yatak-odasi", name: "Dolap & Üniteler", slug: "yatak-odasi" },
+  { id: "ofis", name: "Koltuk & Berjer", slug: "ofis" },
 ];
 
 export const availableColors = [
@@ -33,15 +33,15 @@ export const products: Product[] = [
   {
     id: "1",
     slug: "milano-kanepe",
-    name: "Milano Kanepe",
+    name: "Chesterline Makam Takımı",
     categoryId: "oturma-odasi",
-    category: "Oturma Odası",
-    price: 89900,
-    compareAtPrice: 105000,
+    category: "Makam Takımları",
+    price: 64900,
+    compareAtPrice: 95000,
     description:
-      "Milano Kanepe, İtalyan tasarım anlayışıyla üretilmiş premium bir oturma grubudur. Yüksek yoğunluklu sünger ve birinci sınıf kumaş kaplama ile uzun ömürlü konfor sunar. Minimal çizgileri ve zarif profiliyle modern yaşam alanlarına sofistike bir dokunuş katar.",
+      "Chesterline Makam Takımı; çalışma masası, üniteli dolap, sehpa, etajer, misafir koltukları ve makam koltuğundan oluşan komple ofis çözümüdür. Tüm renk seçenekleriyle üretilir.",
     seoDescription:
-      "Milano Kanepe — premium oturma odası kanepe. El işçiliği, 5 yıl garanti. Tuncer Mobilya'da keşfedin.",
+      "Chesterline Makam Takımı — 7 parça makam ofis takımı. Kampanyalı fiyat. Tuncer Mobilya.",
     images: gallery("milano-kanepe"),
     colors: ["Krem", "Antrasit", "Bej"],
     fabrics: ["Kadife", "Keten", "Deri"],
@@ -62,14 +62,15 @@ export const products: Product[] = [
   {
     id: "2",
     slug: "venezia-yemek-masasi",
-    name: "Venezia Yemek Masası",
+    name: "Chesterline Makam Masası",
     categoryId: "yemek-odasi",
-    category: "Yemek Odası",
-    price: 124500,
+    category: "Makam Masaları",
+    price: 64900,
+    compareAtPrice: 95000,
     description:
-      "Venezia Yemek Masası, masif ceviz ağacından üretilmiş, 8 kişilik kapasiteli premium bir yemek masasıdır. Doğal ahşap damarları ve el cilalama işçiliği ile her parça benzersizdir.",
+      "Chesterline serisi yönetici masası; 210×85 cm geniş çalışma yüzeyi, üniteli dolap uyumu ve premium işçilik ile makam ofislerine güçlü bir duruş katar.",
     seoDescription:
-      "Venezia Yemek Masası — masif ceviz, 8 kişilik. Premium yemek odası mobilyası. Tuncer Mobilya.",
+      "Chesterline Makam Masası — yönetici çalışma masası. Tuncer Mobilya Ankara.",
     images: gallery("venezia-yemek-masasi"),
     colors: ["Ceviz", "Beyaz"],
     fabrics: [],
@@ -86,14 +87,15 @@ export const products: Product[] = [
   {
     id: "3",
     slug: "toscana-yatak",
-    name: "Toscana Yatak",
-    categoryId: "yatak-odasi",
-    category: "Yatak Odası",
-    price: 156000,
+    name: "Prestij Makam Takımı",
+    categoryId: "oturma-odasi",
+    category: "Makam Takımları",
+    price: 109900,
+    compareAtPrice: 235000,
     description:
-      "Toscana Yatak, yatak odanıza otel konforu getiren özel üretim bir yatak sistemidir. Ortopedik yay sistemi ve premium yatak başlığı ile tasarlanmıştır.",
+      "Prestij Makam Takımı; 270×92 cm yönetici masası, entegre aydınlatmalı dolap, sehpa, etajer ve koltuk grubu ile üst düzey makam ofisleri için tasarlandı.",
     seoDescription:
-      "Toscana Yatak — ortopedik yay sistemi, premium yatak odası. Tuncer Mobilya özel üretim.",
+      "Prestij Makam Takımı — premium makam ofis takımı. Tuncer Mobilya.",
     images: gallery("toscana-yatak"),
     colors: ["Krem", "Antrasit", "Bej"],
     fabrics: ["Keten", "Kadife"],
@@ -112,14 +114,15 @@ export const products: Product[] = [
   {
     id: "4",
     slug: "firenze-kitaplik",
-    name: "Firenze Kitaplık",
-    categoryId: "ofis",
-    category: "Ofis & Çalışma",
-    price: 67800,
+    name: "Prestij Duvar Ünitesi",
+    categoryId: "yatak-odasi",
+    category: "Dolap & Üniteler",
+    price: 109900,
+    compareAtPrice: 235000,
     description:
-      "Firenze Kitaplık, minimalist çizgileri ve modüler yapısıyla ev ofislerine ve çalışma alanlarına zarafet katar. Ayarlanabilir raflar ve gizli kablo kanalı içerir.",
+      "Prestij serisi duvar ünitesi; entegre aydınlatma, geniş depolama alanı ve modern çizgileriyle makam ofislerinde prestijli bir görünüm sunar.",
     seoDescription:
-      "Firenze Kitaplık — modüler ofis kitaplığı. Premium çalışma alanı mobilyası. Tuncer Mobilya.",
+      "Prestij Duvar Ünitesi — makam ofis dolap ünitesi. Tuncer Mobilya.",
     images: gallery("firenze-kitaplik"),
     colors: ["Ceviz", "Beyaz", "Siyah"],
     fabrics: [],
@@ -137,14 +140,14 @@ export const products: Product[] = [
   {
     id: "5",
     slug: "roma-berjer",
-    name: "Roma Berjer",
-    categoryId: "oturma-odasi",
-    category: "Oturma Odası",
+    name: "Chesterline Misafir Berjeri",
+    categoryId: "ofis",
+    category: "Koltuk & Berjer",
     price: 34500,
     description:
-      "Roma Berjer, tekli oturma için tasarlanmış ergonomik ve şık bir berjer koltuktur. Döner metal ayak detayı ile modern bir görünüm sunar.",
+      "Chesterline serisi misafir berjeri; deri kaplama, ergonomik oturum ve makam takımlarıyla uyumlu zarif tasarım.",
     seoDescription:
-      "Roma Berjer — premium tekli koltuk. Oturma odası berjer. Tuncer Mobilya koleksiyonu.",
+      "Chesterline Misafir Berjeri — makam ofis berjeri. Tuncer Mobilya.",
     images: gallery("roma-berjer"),
     colors: ["Krem", "Antrasit", "Bej", "Siyah"],
     fabrics: ["Kadife", "Deri"],
@@ -162,14 +165,14 @@ export const products: Product[] = [
   {
     id: "6",
     slug: "modena-yemek-sandalyesi",
-    name: "Modena Yemek Sandalyesi",
-    categoryId: "yemek-odasi",
-    category: "Yemek Odası",
-    price: 12800,
+    name: "Prestij Misafir Koltuğu",
+    categoryId: "ofis",
+    category: "Koltuk & Berjer",
+    price: 28900,
     description:
-      "Modena Yemek Sandalyesi, ergonomik sırt desteği ve premium döşeme ile uzun sofralar için konfor sağlar. Set halinde tercih edilebilir.",
+      "Prestij serisi misafir koltuğu; makam ofislerinde ziyaretçi alanları için konforlu ve şık oturum çözümü.",
     seoDescription:
-      "Modena Yemek Sandalyesi — ergonomik tasarım, premium döşeme. Tuncer Mobilya.",
+      "Prestij Misafir Koltuğu — makam ofis misafir koltuğu. Tuncer Mobilya.",
     images: gallery("modena-yemek-sandalyesi"),
     colors: ["Krem", "Antrasit", "Ceviz"],
     fabrics: ["Keten", "Kadife"],
@@ -185,14 +188,15 @@ export const products: Product[] = [
   {
     id: "7",
     slug: "siena-gardrop",
-    name: "Siena Gardırop",
-    categoryId: "yatak-odasi",
-    category: "Yatak Odası",
-    price: 98500,
+    name: "Karizma Makam Takımı",
+    categoryId: "oturma-odasi",
+    category: "Makam Takımları",
+    price: 119900,
+    compareAtPrice: 220000,
     description:
-      "Siena Gardırop, geniş depolama alanı ve soft-close menteşe sistemi ile yatak odanızı düzenli tutar. Ayna kapaklı modül seçeneği mevcuttur.",
+      "Karizma Siyah Makam Takımı; 270×90 cm makam masası, üniteli dolap, orta sehpa, etajer ve 9 parçalık koltuk grubu ile güçlü bir yönetici ofisi sunar.",
     seoDescription:
-      "Siena Gardırop — premium yatak odası gardırop. Geniş depolama. Tuncer Mobilya.",
+      "Karizma Makam Takımı — 9 parça siyah makam takımı. Tuncer Mobilya.",
     images: gallery("siena-gardrop"),
     colors: ["Beyaz", "Ceviz", "Antrasit"],
     fabrics: [],
@@ -208,14 +212,15 @@ export const products: Product[] = [
   {
     id: "8",
     slug: "verona-calisma-masasi",
-    name: "Verona Çalışma Masası",
-    categoryId: "ofis",
-    category: "Ofis & Çalışma",
-    price: 45600,
+    name: "Viktor Makam Masası",
+    categoryId: "yemek-odasi",
+    category: "Makam Masaları",
+    price: 45900,
+    compareAtPrice: 65000,
     description:
-      "Verona Çalışma Masası, geniş çalışma yüzeyi ve entegre kablo yönetimi ile verimli bir çalışma deneyimi sunar. Masif meşe tablalıdır.",
+      "Viktor serisi makam masası; 220×85 cm geniş tabla, modern üniteli dolap uyumu ve dayanıklı işçilik.",
     seoDescription:
-      "Verona Çalışma Masası — masif meşe, kablo yönetimi. Premium ofis mobilyası. Tuncer Mobilya.",
+      "Viktor Makam Masası — yönetici çalışma masası. Tuncer Mobilya.",
     images: gallery("verona-calisma-masasi"),
     colors: ["Ceviz", "Beyaz"],
     fabrics: [],
@@ -231,14 +236,15 @@ export const products: Product[] = [
   {
     id: "9",
     slug: "capri-kose-takim",
-    name: "Capri Köşe Takım",
+    name: "Viktor Makam Takımı",
     categoryId: "oturma-odasi",
-    category: "Oturma Odası",
-    price: 142000,
+    category: "Makam Takımları",
+    price: 45900,
+    compareAtPrice: 65000,
     description:
-      "Capri Köşe Takım, geniş aileler ve misafir ağırlamayı sevenler için tasarlanmış lüks bir köşe kanepe setidir. Modüler yapısı ile alana göre uyarlanabilir.",
+      "Viktor Makam Takımı; 220×85 cm yönetici masası, 200×200 cm üniteli dolap, sehpa, etajer ve misafir koltuklarından oluşan 7 parçalık set.",
     seoDescription:
-      "Capri Köşe Takım — modüler lüks köşe kanepe. Premium oturma odası. Tuncer Mobilya.",
+      "Viktor Makam Takımı — kampanyalı makam ofis takımı. Tuncer Mobilya.",
     images: gallery("capri-kose-takim"),
     colors: ["Krem", "Antrasit", "Bej"],
     fabrics: ["Kadife", "Keten", "Deri"],
@@ -254,14 +260,15 @@ export const products: Product[] = [
   {
     id: "10",
     slug: "palermo-konsol",
-    name: "Palermo Konsol",
-    categoryId: "yemek-odasi",
-    category: "Yemek Odası",
-    price: 38900,
+    name: "Eko İmaj Makam Takımı",
+    categoryId: "oturma-odasi",
+    category: "Makam Takımları",
+    price: 32900,
+    compareAtPrice: 48000,
     description:
-      "Palermo Konsol, yemek odanızın girişine zarafet katan ince profilli bir konsol ünitesidir. Çekmece ve raf bölümleri ile pratik depolama sunar.",
+      "Eko İmaj Makam Takımı; 180×80 cm çalışma masası, dolap, sehpa, etajer ve makam koltuğundan oluşan ekonomik ve şık ofis çözümü.",
     seoDescription:
-      "Palermo Konsol — yemek odası konsol ünitesi. Premium tasarım. Tuncer Mobilya.",
+      "Eko İmaj Makam Takımı — uygun fiyatlı makam takımı. Tuncer Mobilya.",
     images: gallery("palermo-konsol"),
     colors: ["Ceviz", "Siyah"],
     fabrics: [],
@@ -271,20 +278,20 @@ export const products: Product[] = [
     ],
     dimensions: { width: "140 cm", height: "85 cm", depth: "40 cm", weight: "32 kg" },
     specs: baseSpecs,
-    stockStatus: "out_of_stock",
-    stockCount: 0,
+    stockStatus: "in_stock",
+    stockCount: 8,
   },
   {
     id: "11",
     slug: "como-komodin",
-    name: "Como Komodin",
+    name: "Eko İmaj Orta Sehpa",
     categoryId: "yatak-odasi",
-    category: "Yatak Odası",
+    category: "Dolap & Üniteler",
     price: 18900,
     description:
-      "Como Komodin, yatak başınızın yanında şık bir tamamlayıcıdır. USB şarj portu ve gizli çekmece bölümü ile fonksiyonel tasarım.",
+      "Eko İmaj serisi orta sehpa; makam takımlarıyla uyumlu, kompakt ve fonksiyonel ofis tamamlayıcısı.",
     seoDescription:
-      "Como Komodin — USB portlu yatak odası komodin. Tuncer Mobilya.",
+      "Eko İmaj Orta Sehpa — makam ofis sehpası. Tuncer Mobilya.",
     images: gallery("como-komodin"),
     colors: ["Beyaz", "Ceviz", "Antrasit"],
     fabrics: [],
@@ -299,14 +306,14 @@ export const products: Product[] = [
   {
     id: "12",
     slug: "torino-ofis-koltugu",
-    name: "Torino Ofis Koltuğu",
+    name: "Chesterline Makam Koltuğu",
     categoryId: "ofis",
-    category: "Ofis & Çalışma",
+    category: "Koltuk & Berjer",
     price: 28500,
     description:
-      "Torino Ofis Koltuğu, ergonomik lumbar desteği ve nefes alabilir mesh sırtlık ile uzun çalışma saatlerinde konfor sağlar.",
+      "Chesterline makam koltuğu; deri kaplama, ergonomik destek ve uzun çalışma saatlerinde üst düzey konfor.",
     seoDescription:
-      "Torino Ofis Koltuğu — ergonomik mesh ofis sandalyesi. Tuncer Mobilya.",
+      "Chesterline Makam Koltuğu — yönetici ofis koltuğu. Tuncer Mobilya.",
     images: gallery("torino-ofis-koltugu"),
     colors: ["Siyah", "Antrasit"],
     fabrics: ["Deri", "Mesh"],

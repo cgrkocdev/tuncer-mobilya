@@ -3,7 +3,7 @@ import { readJsonFile, writeJsonFile } from "@/lib/store/fs";
 import type { Product, ProductCategoryId, StockStatus } from "@/types/product";
 
 const FILE = "products.json";
-const CATALOG_VERSION = 4;
+const CATALOG_VERSION = 6;
 
 let cache: Product[] | null = null;
 

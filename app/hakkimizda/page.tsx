@@ -84,8 +84,8 @@ export default function HakkimizdaPage() {
             <ScrollReveal delay={0.08}>
               <div className="space-y-5 text-base leading-[1.8] text-muted-foreground sm:space-y-6 sm:text-lg sm:leading-[1.85]">
                 <p>
-                  Küçük bir atölyede başlayan yolculuğumuz, bugün İstanbul&apos;un
-                  kalbinde premium bir showroom ve modern üretim tesisleriyle devam
+                  Küçük bir atölyede başlayan yolculuğumuz, bugün Ankara&apos;da
+                  premium bir showroom ve modern üretim tesisleriyle devam
                   ediyor. Geleneksel marangozluk bilgisini çağdaş iç mimari anlayışıyla
                   birleştiriyoruz.
                 </p>
